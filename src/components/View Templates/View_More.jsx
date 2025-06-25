@@ -55,9 +55,9 @@ const ViewMore = () => {
     return (
         <div className="bg-blue-50 min-h-screen py-12 px-4 sm:px-8 md:px-16 lg:px-24">
             <div className="text-center mb-10">
-                {/* <div className="inline-block mb-2 px-4 py-1 text-xs font-semibold bg-white text-blue-600 rounded-full border border-blue-200">
+                <div className="inline-block mb-2 px-4 py-1 text-xs font-semibold bg-white text-blue-600 rounded-full border border-blue-200">
           ATS-Optimized Templates
-        </div> */}
+        </div>
                 <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Choose Your Perfect Template</h1>
                 <p className="text-gray-600 text-sm sm:text-base">
                     Professional resume templates designed by hiring experts and optimized to pass <br className="hidden sm:block" />
