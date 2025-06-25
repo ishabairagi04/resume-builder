@@ -5,7 +5,7 @@ import React from "react";
 
 
 import Navbar from './components/navbar/Navbar.jsx/';
-import HeroSection from './components/herosection/HeroSection';
+import HeroSection from './components/herosection/HeroSection/';
 function App() {
   return (
    <div >
