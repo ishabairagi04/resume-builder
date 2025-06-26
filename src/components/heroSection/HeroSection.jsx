@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function HeroSection() {
+  
+  const navigate = useNavigate();
 
-     const features = [
+  const features = [
     {
       title: "ATS-Friendly Format",
       description: "Export resumes in ATS-safe format with proper semantic structure",
@@ -43,10 +46,10 @@ export default function HeroSection() {
 
   return (
     <>
-    <section className="  bg-cover bg-center bg-no-repeat px-4 sm:px-6 py-12 sm:py-16 text-center" style={{ backgroundImage: "url('/main bg.avif')" }}>
-      <div className="max-w-4xl mx-auto">
-       
-        {/* <div className="inline-flex items-center px-3 py-1 text-xs sm:text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4 sm:mb-6">
+      <section className="mt-10  bg-cover bg-center bg-no-repeat px-4 sm:px-6 py-12 sm:py-16 text-center" style={{ backgroundImage: "url('/main bg.avif')" }}>
+        <div className="max-w-4xl mx-auto">
+
+          {/* <div className="inline-flex items-center px-3 py-1 text-xs sm:text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4 sm:mb-6">
           <svg
             className="w-4 h-4 mr-1"
             fill="none"
@@ -59,66 +62,66 @@ export default function HeroSection() {
           99% Job Placement Success Rate
         </div> */}
 
-        
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight sm:leading-tight">
-          Build Your Perfect <span className="text-blue-600">ATS-Friendly</span> Resume in Minutes
-        </h1>
 
-     
-        <p className="text-gray-800 text-base sm:text-lg mb-8 sm:px-6">
-          Create professional resumes that pass Applicant Tracking Systems (ATS) and land you interviews.
-          Choose from AI-powered templates designed by hiring experts.
-        </p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight sm:leading-tight">
+            Build Your Perfect <span className="text-blue-600">ATS-Friendly</span> Resume in Minutes
+          </h1>
 
-       
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6 px-4 sm:px-0">
-          <button className="bg-gray-900 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition">
-            Start Building Your Resume
-          </button>
-          <button className="bg-white border border-gray-300 text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition">
-            View Templates
-          </button>
+
+          <p className="text-gray-800 text-base sm:text-lg mb-8 sm:px-6">
+            Create professional resumes that pass Applicant Tracking Systems (ATS) and land you interviews.
+            Choose from AI-powered templates designed by hiring experts.
+          </p>
+
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6 px-4 sm:px-0">
+            <button className="bg-gray-900 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition">
+              Start Building Your Resume
+            </button>
+              <button onClick={() => navigate('/next')} className="bg-white border border-gray-300 text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition">
+                View Templates
+              </button>
+          </div>
+
+
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-4 text-sm text-gray-700 px-2 sm:px-0">
+            <span className="flex items-center justify-center gap-1">
+              ✅ Free template included
+            </span>
+            <span className="flex items-center justify-center gap-1">
+              ✅ No credit card required
+            </span>
+            <span className="flex items-center justify-center gap-1">
+              ✅ Export immediately
+            </span>
+          </div>
         </div>
+      </section>
+      <section className="w-full py-16 bg-white px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            Why Choose ResumeBuilder Pro?
+          </h2>
+          <p className="text-gray-600 mb-10 text-base sm:text-lg">
+            Our platform combines cutting-edge AI technology with proven hiring insights to help you create resumes that get results.
+          </p>
 
-      
-        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-4 text-sm text-gray-700 px-2 sm:px-0">
-          <span className="flex items-center justify-center gap-1">
-            ✅ Free template included
-          </span>
-          <span className="flex items-center justify-center gap-1">
-            ✅ No credit card required
-          </span>
-          <span className="flex items-center justify-center gap-1">
-            ✅ Export immediately
-          </span>
-        </div>
-      </div>
-    </section>
-     <section className="w-full py-16 bg-white px-4 sm:px-6 lg:px-8 text-center">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-          Why Choose ResumeBuilder Pro?
-        </h2>
-        <p className="text-gray-600 mb-10 text-base sm:text-lg">
-          Our platform combines cutting-edge AI technology with proven hiring insights to help you create resumes that get results.
-        </p>
-
-        <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-white p-6  rounded-xl shadow-md hover:shadow-lg transition"
-            >
-              <div className="w-full flex items-center justify-center mb-4">
-                <div className="bg-blue-100 rounded-full p-3">{feature.icon}</div>
+          <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-white p-6  rounded-xl shadow-md hover:shadow-lg transition"
+              >
+                <div className="w-full flex items-center justify-center mb-4">
+                  <div className="bg-blue-100 rounded-full p-3">{feature.icon}</div>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                <p className="text-sm text-gray-600">{feature.description}</p>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-              <p className="text-sm text-gray-600">{feature.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     </>
   );
