@@ -42,9 +42,9 @@ export default function Navbar() {
           </span>
         </div>
 
-        {/* Nav Buttons */}
+        
         <div className="flex items-center space-x-6">
-          <button className="text-gray-800 font-medium hover:text-blue-600 transition">
+          <button className="text-gray-800 none font-medium hover:text-blue-600 transition">
             Login
           </button>
           <button className="bg-gray-900 text-white px-5 py-2 rounded-md font-semibold hover:bg-gray-800 transition">
