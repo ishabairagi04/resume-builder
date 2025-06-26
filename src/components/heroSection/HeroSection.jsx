@@ -43,7 +43,7 @@ export default function HeroSection() {
 
   return (
     <>
-    <section className="  bg-cover bg-center bg-no-repeat px-4 sm:px-6 py-12 sm:py-16 text-center" style={{ backgroundImage: "url('/main bg.avif')" }}>
+    <section className=" mt-12 bg-cover bg-center bg-no-repeat px-4 sm:px-6 py-12 sm:py-16 text-center" style={{ backgroundImage: "url('/main bg.avif')" }}>
       <div className="max-w-4xl mx-auto">
        
         {/* <div className="inline-flex items-center px-3 py-1 text-xs sm:text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4 sm:mb-6">
